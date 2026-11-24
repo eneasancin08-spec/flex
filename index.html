@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tecnología útil y diseño simple en Nómada Tech.">
+  <title>Nómada Tech | Tecnología simple</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Aviso superior: Flexbox centra el mensaje horizontal y verticalmente. -->
+  <div class="announcement"><p>Envíos gratis en compras superiores a $100.000</p></div>
+  <!-- Encabezado: Flexbox reparte la marca, navegación y acción en una fila. -->
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Nómada Tech, inicio"><span class="brand__symbol">N</span> Nómada<span class="brand__accent">Tech</span></a>
+    <nav class="navigation" aria-label="Navegación principal">
+      <a class="navigation__link" href="#inicio">Inicio</a>
+      <a class="navigation__link" href="#productos">Productos</a>
+      <a class="navigation__link" href="#nosotros">Nosotros</a>
+    </nav>
+    <a class="header-action" href="#productos">Explorar tienda <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="inicio">
+    <!-- Portada: Flexbox alinea el texto y la imagen en dos columnas centradas. -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <p class="eyebrow">Tecnología para todos los días</p>
+        <h1 class="hero__title" id="hero-title">Lo esencial,<br>bien elegido.</h1>
+        <p class="hero__text">Dispositivos prácticos, diseño cuidado y una experiencia sin vueltas.</p>
+        <a class="button" href="#productos">Ver productos <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero__visual">
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&auto=format&fit=crop&q=85" alt="Notebook sobre una mesa clara">
+        <span class="hero__label">Ideas que conectan.</span>
+      </div>
+    </section>
+
+    <!-- Galería: Flexbox acomoda los cuatro productos en fila y los envuelve en pantallas pequeñas. -->
+    <section class="products section" id="productos" aria-labelledby="products-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Nuestra selección</p><h2 class="section-heading__title" id="products-title">Favoritos de la tienda</h2></div>
+        <p class="section-heading__note">Cuatro elegidos para acompañarte.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-card__image"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=85" alt="Auriculares inalámbricos color naranja"></div>
+          <p class="product-card__category">Audio</p><h3 class="product-card__name">Auriculares Studio</h3>
+          <p class="product-card__price">$ 58.900</p><a class="product-card__link" href="#contacto">Ver producto <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="product-card">
+          <div class="product-card__image"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&auto=format&fit=crop&q=85" alt="Reloj inteligente de diseño minimalista"></div>
+          <p class="product-card__category">Accesorios</p><h3 class="product-card__name">Reloj Pulse</h3>
+          <p class="product-card__price">$ 92.500</p><a class="product-card__link" href="#contacto">Ver producto <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="product-card">
+          <div class="product-card__image"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&auto=format&fit=crop&q=85" alt="Teléfono celular moderno"></div>
+          <p class="product-card__category">Celulares</p><h3 class="product-card__name">Smartphone Nova</h3>
+          <p class="product-card__price">$ 329.000</p><a class="product-card__link" href="#contacto">Ver producto <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="product-card">
+          <div class="product-card__image"><img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&auto=format&fit=crop&q=85" alt="Tablet sobre fondo claro"></div>
+          <p class="product-card__category">Computación</p><h3 class="product-card__name">Tablet Aire</h3>
+          <p class="product-card__price">$ 245.000</p><a class="product-card__link" href="#contacto">Ver producto <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Presentación: Flexbox apila y centra el contenido de esta sección. -->
+    <section class="about" id="nosotros">
+      <p class="eyebrow">Menos ruido, mejores elecciones</p>
+      <h2 class="about__title">Tecnología que se adapta a tu vida.</h2>
+      <p class="about__text">En Nómada Tech reunimos productos confiables para que encuentres lo que necesitás, fácil y rápido.</p>
+    </section>
+  </main>
+
+  <!-- Pie: Flexbox distribuye marca, datos del práctico y contacto. -->
+  <footer class="site-footer" id="contacto">
+    <a class="brand brand--footer" href="#inicio"><span class="brand__symbol">N</span> Nómada<span class="brand__accent">Tech</span></a>
+    <p>Práctico de Flexbox · HTML + CSS</p><a class="site-footer__contact" href="mailto:hola@nomadatech.com">hola@nomadatech.com</a>
+  </footer>
+</body>
+</html>
+
