@@ -27,6 +27,3 @@ Las reglas dentro de `@media` ajustan espacios, tamaños y distribución para ce
 
 Abrí `index.html` en un navegador. La fuente DM Sans y las imágenes externas requieren conexión a internet.
 
-## Publicación
-
-Subí `index.html`, `styles.css`, `README.md` y `LEEME.txt` al repositorio configurado con GitHub Pages. En GitHub, configurá Pages para publicar desde la rama principal y la carpeta raíz; luego abrí la URL que muestre la sección **Settings > Pages**.
